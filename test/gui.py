@@ -21,7 +21,6 @@ menubar.add_cascade(label='File', menu=submenu)
 def file_browser():
     global filename
     filename = filedialog.askopenfilename()
-    print(filename)
 
 
 submenu.add_command(label='open', command=file_browser)
@@ -55,14 +54,6 @@ def stop():
 
 
 button = tk.Button(root, text='stop', fg='blue', command=stop)
-button.pack()
-
-
-def pos():
-    print(mixer.music.get_pos())
-
-
-button = tk.Button(root, text='pos', fg='blue', command=pos)
 button.pack()
 
 
