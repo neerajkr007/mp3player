@@ -64,7 +64,6 @@ def pos():
 
 button = tk.Button(root, text='pos', fg='blue', command=pos)
 button.pack()
-# message = tk.Message(frame, text='test_player')
-# message.pack()
+
 
 root.mainloop()
